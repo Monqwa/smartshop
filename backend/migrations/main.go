@@ -13,6 +13,8 @@ import (
 
 var dir = flag.String("dir", "./migrations", "directory with migration files")
 
+// i got this function from a goose github documentation:
+// https://github.com/pressly/goose/blob/main/examples/go-migrations/main.go
 func main() {
 	flag.Parse()
 
@@ -33,7 +35,6 @@ func main() {
 		viper.GetString("db.sslmode"),
 	)
 
-	// Now "pgx" is a known driver
 	db, err := goose.OpenDBWithDriver("pgx", dsn)
 	if err != nil {
 		log.Fatalf("goose: failed to open DB: %v", err)

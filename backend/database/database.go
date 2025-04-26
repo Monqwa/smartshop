@@ -11,7 +11,8 @@ import (
 
 var DB *gorm.DB
 
-// Connect – инициализирует подключение к базе и сохраняет его в глобальной переменной DB.
+// i got this function from a gorm documentation
+// https://gorm.io/docs/connecting_to_the_database.html#PostgreSQL
 func Connect() {
 	// Формируем DSN из конфига
 	dsn := fmt.Sprintf(
