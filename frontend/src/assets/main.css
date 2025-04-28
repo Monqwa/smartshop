@@ -1,0 +1,163 @@
+@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-gray-100: #f8f9fa;
+  --color-gray-200: #e9ecef;
+  --color-gray-300: #dee2e6;
+  --color-gray-400: #ced4da;
+  --color-gray-500: #adb5bd;
+  --color-gray-600: #6c757d;
+  --color-gray-700: #495057;
+  --color-gray-800: #343a40;
+  --color-gray-900: #212529;
+
+  --background: var(--color-white);
+  --card-background: var(--color-white);
+  --text-color: var(--color-gray-900);
+  --text-muted: var(--color-gray-600);
+  --border-color: var(--color-gray-300);
+  --hover-background: var(--color-gray-100);
+  --hover-dark: var(--color-gray-800);
+  --focus-color: var(--color-gray-800);
+  --active-color: var(--color-gray-900);
+
+  --primary: var(--color-gray-900);
+  --primary-hover: var(--color-black);
+  --danger: var(--color-error);
+  --danger-hover: var(--color-black);
+  --success: var(--color-gray-800);
+  --success-hover: var(--color-black);
+  --disabled: var(--color-gray-200);
+  --disabled-text: var(--color-gray-500);
+
+  --checkbox-active: var(--color-gray-800);
+  --checkbox-border: var(--color-gray-400);
+  --input-border: var(--color-gray-300);
+  --input-border-focus: var(--color-gray-700);
+  --button-background: var(--color-gray-800);
+  --button-text: var(--color-white);
+  --item-bought-color: var(--color-gray-400);
+  --item-background: var(--color-white);
+  --item-border: var(--color-gray-200);
+  --item-hover-background: var(--color-gray-50);
+  --item-focus-border: var(--color-gray-300);
+  --delete-button-hover: var(--color-gray-100);
+  --checkbox-background: var(--color-white);
+  --checkbox-checked-background: var(--color-gray-800);
+  --checkbox-checked-border: var(--color-gray-800);
+  
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-xxl: 3rem;
+
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-xxl: 1.5rem;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-width-thin: 1px;
+  --border-width-medium: 2px;
+  
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+  --transition-slow: 0.4s ease;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 4px 6px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--color-gray-100);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: var(--space-md);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--primary-hover);
+}
+
+button {
+  font-family: var(--font-family);
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: var(--font-size-md);
+  transition: all var(--transition-fast);
+}
+
+input, select, textarea {
+  font-family: var(--font-family);
+  font-size: var(--font-size-md);
+  border: 1px solid var(--input-border);
+  border-radius: var(--border-radius-sm);
+  padding: var(--space-sm) var(--space-md);
+  transition: border-color var(--transition-fast);
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--input-border-focus);
+}
+
+ul {
+  list-style: none;
+}
+
+.text-center { text-align: center; }
+.text-muted { color: var(--text-muted); }
+.w-full { width: 100%; }
